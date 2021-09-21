@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from './main-app-routing.module';
+import { AppComponent } from './main-app.component';
 import { AddQaAdminApisComponent } from './components/add-qa-admin-apis/add-qa-admin-apis.component';
 import { QaAdminApisComponent } from './components/qa-admin-apis/qa-admin-apis.component';
 import { QaAdminApisDetailsComponent } from './components/qa-admin-apis-details/qa-admin-apis-details.component';

@@ -1,4 +1,4 @@
-app.config(['$routeProvider', function ($routeProvider) {
+main-app.config(['$routeProvider', function ($routeProvider) {
 
     $routeProvider.when('/',
         {
