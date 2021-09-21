@@ -32,3 +32,18 @@ db.sequelize.sync();
 db.sequelize.sync({ force: true }).then(() => {
   console.log("Drop and re-sync db.");
 });
+
+app.configure(function () {
+  app.set('port', process.env.PORT || 3000);
+
+  app.use(express.favicon());
+  app.use(express.cookieParser());
+  app.use(express.bodyParser());
+  app.use(express.logger('dev'));  //tiny, short, default
+  app.use(express.methodOverride());
+  app.use(express.cookieSession({secret: "sdfr"}));
+
+  //app.set('views', __dirname + '/client/views/');
+  app.use(express.static(__dirname + '/client/views'));
+
+});
