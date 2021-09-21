@@ -6,5 +6,13 @@ const routes: Routes = [];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
+
+  imports: [
+    FormsModule,
+    HttpClientModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
+export class AppModule { }
 export class AppRoutingModule { }

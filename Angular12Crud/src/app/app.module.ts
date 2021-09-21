@@ -8,6 +8,8 @@ import { QaAdminApisComponent } from './components/qa-admin-apis/qa-admin-apis.c
 import { QaAdminApisDetailsComponent } from './components/qa-admin-apis-details/qa-admin-apis-details.component';
 import { QaAdminApisDirective } from './components/qa-admin-apis.directive';
 import { QaAdminApisListComponent } from './components/qa-admin-apis-list/qa-admin-apis-list.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
