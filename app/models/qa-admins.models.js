@@ -1,23 +1,18 @@
-const { url } = require("inspector");
-
 module.exports = (sequelize, Sequelize) => {
-    const QA-Admin-APIs = sequelize.define("qa-admin-apis", {
+    const QA-Admins = sequelize.define("qa-admins", {
       id: {
         type: Sequelize.BOOLEAN
       },
-      api-title: {
+      name: {
         type: Sequelize.STRING
       },
-      api-description: {
+      photo_path: {
         type: Sequelize.STRING
       },
-      api-url: {
-        type: Sequelize.URL
-      },
-      api-username: {
+      cert_path: {
         type: Sequelize.STRING
       },
-      api-password: {
+      profile: {
         type: Sequelize.STRING
       },
       isPublished: {
@@ -25,5 +20,5 @@ module.exports = (sequelize, Sequelize) => {
       }
     });
   
-    return QA-Admin-APIs;
+    return QA-Admins;
   };

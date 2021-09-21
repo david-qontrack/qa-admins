@@ -20,5 +20,6 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.qa-admin-apis = require("./qa-admin-apis.model.js")(sequelize, Sequelize);
+db.qa-admins = require("./qa-admins.model.js")(sequelize, Sequelize);
 
 module.exports = db;
