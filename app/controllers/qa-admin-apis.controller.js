@@ -1,5 +1,5 @@
 const db = require("../models");
-const Tutorial = db.tutorials;
+const QA-Admin-Apis = db.qa-admin-apis;
 const Op = db.Sequelize.Op;
 
 // Create and Save a new Tutorial
