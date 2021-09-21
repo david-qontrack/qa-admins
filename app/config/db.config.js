@@ -1,6 +1,7 @@
 module.exports = {
     HOST: "localhost",
-    USER: "root",
+    USER: "qa-admindb",
+    PORT: "3306",
     PASSWORD: "123456",
     DB: "qa-admindb",
     dialect: "mysql",
@@ -11,3 +12,12 @@ module.exports = {
       idle: 10000
     }
   };
+
+const db = {};
+
+db.Sequelize = Sequelize;
+db.sequelize = sequelize;
+
+db.tutorials = require("./tutorial.model.js")(sequelize, Sequelize);
+
+module.exports = db;
